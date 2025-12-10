@@ -14,7 +14,7 @@ const Sidebar = () => {
                     className=' block ml-3 cursor-pointer' />
                 <div className=' mt-[50px] inline-flex items-center gap-2 p-3 bg-[#e6eaf1] rounded-full text-sm text-gray-500 cursor-pointer hover:bg-gray-300'>
                     <SquarePen size={18} />
-                    {extended ? <p>New Chart</p> : null}
+                    {extended ? <p>New Chat</p> : null}
                 </div>
                 {extended
                     ?
