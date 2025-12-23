@@ -1,6 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyCJSp4SrO1UOyD4PWW_BcxdIorZ0C6zh2Y" });
+const ai = new GoogleGenAI({
+    apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+});
 
 async function main() {
     const response = await ai.models.generateContent({
